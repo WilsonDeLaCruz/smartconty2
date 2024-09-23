@@ -1,0 +1,124 @@
+:root {
+    --colorTextos: #49454567;
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    padding-top: 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav .logo {
+    height: 60px;
+
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    font-weight: 300px;
+    transition: ease-in-out 0.5s;
+}
+
+.nav .enlaces-header a {
+    color: #5D6678;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav .enlaces-header a:hover {
+    border-bottom: 3px solid #52b4fa80;
+    transition: all 150ms;
+    
+}
+
+
+
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+/* Estilos boton GUARDAR*/
+.btn-guardar{
+    width: 100%;
+    padding: 15px;
+    background-color: #20c997;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+  }
+  .btn-guardar:hover,.btn-guardar:active{
+    color:#fff;
+    background-color:#13795b;
+    border-color:#13795b;
+  }
+  .btn-guardar:focus{
+    box-shadow:0 0 0 3px rgba(121,82,179,0.25)
+  }
+  .form-check a{
+    text-decoration: none;
+  }
+
+
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}
+
